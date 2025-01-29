@@ -1,19 +1,10 @@
 name: CI/CD Pipeline
 
 on:
-<<<<<<< HEAD
-  workflow_dispatch:
-    push:
-      branches:
-        - main
-      paths:
-        - 'app/**'
-=======
   push:
     branches:
       - main
   workflow_dispatch:
->>>>>>> 52a772866da65e77e8b70441ede274d16c38b81f
 
 jobs:
   build-and-push:
