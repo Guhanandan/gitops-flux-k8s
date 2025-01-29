@@ -1,0 +1,12 @@
+# image-policy.yaml
+apiVersion: image.toolkit.fluxcd.io/v1beta2
+kind: ImagePolicy
+metadata:
+  name: myapp-policy
+  namespace: flux-system
+spec:
+  imageRepositoryRef:
+    name: myapp-image
+  policy:
+    semver:
+      range: "1.0.x"
