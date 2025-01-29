@@ -1,5 +1,5 @@
 # Use an official Node.js runtime as the base image
-FROM node:alpine3.20
+FROM gcr.io/google-appengine/nodejs
 
 # Set the working directory inside the container
 WORKDIR /app
