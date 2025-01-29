@@ -3,7 +3,7 @@ const express = require('express');
 const app = express();
 
 app.get('/', (req, res) => {
-  res.send('This is my application with version tag v1.0.2');
+  res.send('This is my application with version tag v1.0.3');
 });
 
 app.get('/about', (req, res) => {
