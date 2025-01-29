@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
         - name: flux-app
-          image: guhanandan/flux-demoapp:ed246b86b204ad50601f4691cdd88e67742aff00
+          image: guhanandan/flux-demoapp:1a9cbded893e9cf06f2b523c7b95b28750457c4a
           ports:
             - containerPort: 80
