@@ -45,12 +45,8 @@ jobs:
       # Step 6: Update the image tag in the GitOps repository
       - name: Update Image Tag
         run: |
-<<<<<<< HEAD
           cd gitops-flux-k8s
           sed -i "s|guhanandan/flux-demoapp:.*|guhanandan/flux-demoapp:${{ github.sha }}|" clusters/minikube/flux-system/deployment.yaml
-=======
-          sed -i "s|guhanandan/flux-demoapp:.*|guhanandan/fkux-demoapp:${{ github.sha }}|" clusters/minikube/flux-system/deployment.yaml
->>>>>>> 52a772866da65e77e8b70441ede274d16c38b81f
           git config --global user.name "GitHub Actions"
           git config --global user.email "actions@github.com"
           git add clusters/minikube/flux-system/deployment.yaml
